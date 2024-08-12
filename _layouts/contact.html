@@ -1,0 +1,124 @@
+---
+layout: default
+---
+<a href="{{ " /" | relative_url }}">{{ site.theme_config.back_home_text }}</a>
+
+<header>
+  <h1>Contact Me</h1>
+</header>
+
+<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xpwarodv"
+  method="post">
+  <fieldset id="fs-frm-inputs">
+    <label for="full-name">Full Name</label>
+    <input type="text" name="name" id="full-name" placeholder="John Citizen" required="">
+    <label for="email-address">Email Address</label>
+    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required="">
+    <label for="message">Message</label>
+    <textarea rows="5" name="message" id="message" placeholder="Hello Isaac!" required=""></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+  </fieldset>
+  <input type="submit" value="Submit">
+</form>
+
+{% if site.theme_config.show_footer == true %}
+<footer>
+  <div class="dashed"></div>
+  {% include horizontal_list.html collection=site.data.home.footer_entries %}
+</footer>
+{% endif %}
+
+<style>
+  /* Reset and base styles */
+  #fs-frm input,
+  #fs-frm select,
+  #fs-frm textarea,
+  #fs-frm fieldset,
+  #fs-frm optgroup,
+  #fs-frm label,
+  #fs-frm #card-element:disabled {
+    font-family: inherit;
+    font-size: 100%;
+    color: #333;
+    /* Darker text color */
+    border: none;
+    border-radius: 0;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  #fs-frm label,
+  #fs-frm legend,
+  #fs-frm ::placeholder {
+    font-size: .825rem;
+    margin-bottom: .5rem;
+    padding-top: .2rem;
+    display: flex;
+    align-items: baseline;
+    color: #666;
+    /* Darker label and placeholder color */
+  }
+
+  /* Border, padding, margin, width */
+  #fs-frm input,
+  #fs-frm select,
+  #fs-frm textarea,
+  #fs-frm #card-element {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    /* Slightly darker border */
+    background-color: rgba(255, 255, 255, 0.95);
+    /* Slightly opaque white */
+    padding: .75em 1rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    /* Text color */
+  }
+
+  #fs-frm input:focus,
+  #fs-frm select:focus,
+  #fs-frm textarea:focus {
+    background-color: #fff;
+    outline-style: solid;
+    outline-width: thin;
+    outline-color: #007bff;
+    /* Blue outline on focus */
+    outline-offset: -1px;
+  }
+
+  #fs-frm [type="submit"] {
+    background-color: #007bff;
+    /* Blue background for submit button */
+    color: #fff;
+    padding: 0.75em 1.5em;
+    border-radius: 4px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #fs-frm [type="submit"]:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+  }
+
+  #fs-frm [type="text"],
+  #fs-frm [type="email"] {
+    width: 100%;
+  }
+
+  #fs-frm select {
+    text-transform: none;
+  }
+
+  #fs-frm [type="checkbox"],
+  #fs-frm [type="radio"] {
+    display: inline-block;
+    width: auto;
+    margin: 0 .5em 0 0 !important;
+  }
+</style>

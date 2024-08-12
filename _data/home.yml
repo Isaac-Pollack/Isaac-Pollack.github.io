@@ -1,0 +1,32 @@
+navbar_entries:
+  - title: projects
+    url: blog
+
+  - title: contact
+    url: contact
+
+project_entries:
+  - title: Chop Chop
+    url: chop-chop
+    desc: A Laravel application focusing on the end result. Attempting to emulate popular food ordering services such as Uber Eats, Doordash or Menulog.
+    # highlight: WIP
+
+  - title: Nangular Chat
+    url: nangular-chat
+    desc: A full-stack, real-time chat application, with group and room functionality, similar to services like Teams or Discord.
+    # highlight: WIP
+
+  - title: F1 Frontend
+    url: f1-frontend
+    desc: A react based SPA with race/constructor standings and upcoming race & weather data. Utilizes a proxy server for API requests.
+    # highlight: WIP
+
+footer_entries:
+  - title: github
+    url: https://github.com/Isaac-Pollack
+
+  - title: linkedin
+    url: https://www.linkedin.com/in/isaac-pollack/
+
+  - title: twitter
+    url: https://x.com/Isaac_Pollack
