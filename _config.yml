@@ -13,7 +13,7 @@ twitter:
     username: Isaac_Pollack # update or delete this
     card: summary_large_image
 
-remote_theme: abhinavs/moonwalk
+remote_theme: abhinavs/moonwalk,
 
 theme_config:
   appearance: "dark" # can be "light", "dark" or "auto"
